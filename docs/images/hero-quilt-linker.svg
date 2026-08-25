@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <linearGradient id="shelf" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7C2D12"/>
+      <stop offset="100%" stop-color="#451A03"/>
+    </linearGradient>
+    <filter id="softglow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="640" height="320" fill="#1C1917"/>
+  <!-- bookshelves with .qm module "books" -->
+  <g>
+    <!-- shelf 1 -->
+    <rect x="40" y="60" width="560" height="6" fill="url(#shelf)"/>
+    <rect x="40" y="200" width="560" height="6" fill="url(#shelf)"/>
+    <!-- 6 books, each a .qm module -->
+    <g filter="url(#softglow)">
+      <rect x="60" y="70" width="60" height="130" fill="#3B82F6" rx="2"/>
+      <text x="90" y="100" text-anchor="middle" fill="#FFF" font-family="ui-monospace,monospace" font-size="11" font-weight="bold">bathy</text>
+      <text x="90" y="115" text-anchor="middle" fill="#DBEAFE" font-family="ui-monospace,monospace" font-size="9">.qm</text>
+      <text x="90" y="140" text-anchor="middle" fill="#FFF" font-family="ui-monospace,monospace" font-size="8">5 cells</text>
+
+      <rect x="130" y="80" width="50" height="120" fill="#10B981" rx="2"/>
+      <text x="155" y="110" text-anchor="middle" fill="#FFF" font-family="ui-monospace,monospace" font-size="10" font-weight="bold">ss</text>
+      <text x="155" y="125" text-anchor="middle" fill="#D1FAE5" font-family="ui-monospace,monospace" font-size="8">.qm</text>
+      <text x="155" y="150" text-anchor="middle" fill="#FFF" font-family="ui-monospace,monospace" font-size="7">3 cells</text>
+
+      <rect x="190" y="65" width="65" height="135" fill="#A855F7" rx="2"/>
+      <text x="222" y="95" text-anchor="middle" fill="#FFF" font-family="ui-monospace,monospace" font-size="10" font-weight="bold">bus</text>
+      <text x="222" y="110" text-anchor="middle" fill="#F3E8FF" font-family="ui-monospace,monospace" font-size="8">.qm</text>
+      <text x="222" y="135" text-anchor="middle" fill="#FFF" font-family="ui-monospace,monospace" font-size="7">2 cells</text>
+
+      <rect x="265" y="75" width="55" height="125" fill="#F59E0B" rx="2"/>
+      <text x="292" y="105" text-anchor="middle" fill="#FFF" font-family="ui-monospace,monospace" font-size="10" font-weight="bold">ttrpg</text>
+      <text x="292" y="120" text-anchor="middle" fill="#FEF3C7" font-family="ui-monospace,monospace" font-size="8">.qm</text>
+      <text x="292" y="145" text-anchor="middle" fill="#FFF" font-family="ui-monospace,monospace" font-size="7">1 cell</text>
+
+      <rect x="330" y="68" width="60" height="132" fill="#06B6D4" rx="2"/>
+      <text x="360" y="98" text-anchor="middle" fill="#FFF" font-family="ui-monospace,monospace" font-size="10" font-weight="bold">mud</text>
+      <text x="360" y="113" text-anchor="middle" fill="#CFFAFE" font-family="ui-monospace,monospace" font-size="8">.qm</text>
+      <text x="360" y="138" text-anchor="middle" fill="#FFF" font-family="ui-monospace,monospace" font-size="7">4 cells</text>
+
+      <rect x="400" y="78" width="55" height="122" fill="#DC2626" rx="2"/>
+      <text x="427" y="108" text-anchor="middle" fill="#FFF" font-family="ui-monospace,monospace" font-size="10" font-weight="bold">orc</text>
+      <text x="427" y="123" text-anchor="middle" fill="#FEE2E2" font-family="ui-monospace,monospace" font-size="8">.qm</text>
+      <text x="427" y="148" text-anchor="middle" fill="#FFF" font-family="ui-monospace,monospace" font-size="7">2 cells</text>
+
+      <rect x="465" y="70" width="65" height="130" fill="#EC4899" rx="2"/>
+      <text x="497" y="100" text-anchor="middle" fill="#FFF" font-family="ui-monospace,monospace" font-size="10" font-weight="bold">agent</text>
+      <text x="497" y="115" text-anchor="middle" fill="#FCE7F3" font-family="ui-monospace,monospace" font-size="8">.qm</text>
+      <text x="497" y="140" text-anchor="middle" fill="#FFF" font-family="ui-monospace,monospace" font-size="7">3 cells</text>
+    </g>
+  </g>
+  <!-- the librarian (linker) in the center, with a red pencil crossing out a broken link -->
+  <g transform="translate(540,220)">
+    <!-- head -->
+    <circle cx="0" cy="0" r="14" fill="#FCD34D"/>
+    <!-- body -->
+    <rect x="-10" y="14" width="20" height="30" fill="#7C3AED" rx="3"/>
+    <!-- arms -->
+    <line x1="-10" y1="20" x2="-20" y2="40" stroke="#7C3AED" stroke-width="4" stroke-linecap="round"/>
+    <line x1="10" y1="20" x2="22" y2="30" stroke="#7C3AED" stroke-width="4" stroke-linecap="round"/>
+    <!-- red pencil -->
+    <line x1="22" y1="30" x2="38" y2="46" stroke="#DC2626" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="38" cy="46" r="2" fill="#7F1D1D"/>
+  </g>
+  <!-- red X over a dangling link -->
+  <g transform="translate(60,250)">
+    <text x="0" y="0" fill="#FCA5A5" font-family="ui-monospace,monospace" font-size="10">dangl</text>
+    <line x1="0" y1="4" x2="32" y2="20" stroke="#DC2626" stroke-width="2"/>
+    <line x1="0" y1="20" x2="32" y2="4" stroke="#DC2626" stroke-width="2"/>
+  </g>
+  <text x="320" y="280" text-anchor="middle" fill="#E2E8F0" font-family="ui-sans-serif,system-ui" font-size="14" font-weight="600">THE LIBRARIAN · CATCHES BROKEN LINKS BEFORE THE LIBRARY OPENS</text>
+  <text x="320" y="300" text-anchor="middle" fill="#94A3B8" font-family="ui-sans-serif,system-ui" font-size="11">.qm files in, validated graph out</text>
+</svg>

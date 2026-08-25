@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" width="640" height="280">
+  <defs>
+    <filter id="bgglow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="640" height="280" fill="#0F172A"/>
+  <!-- step 1: .qm files -->
+  <g>
+    <rect x="20" y="60" width="100" height="160" fill="#1E293B" stroke="#3B82F6" stroke-width="2" rx="4"/>
+    <text x="70" y="85" text-anchor="middle" fill="#3B82F6" font-family="ui-sans-serif,system-ui" font-size="11" font-weight="700">SOURCES</text>
+    <g font-family="ui-monospace,monospace" font-size="9" fill="#94A3B8">
+      <text x="30" y="110">bathy.qm</text>
+      <text x="30" y="125">ss.qm</text>
+      <text x="30" y="140">bus.qm</text>
+      <text x="30" y="155">ttrpg.qm</text>
+      <text x="30" y="170">mud.qm</text>
+      <text x="30" y="185">orc.qm</text>
+      <text x="30" y="200">agent.qm</text>
+    </g>
+  </g>
+  <!-- arrow -->
+  <line x1="125" y1="140" x2="160" y2="140" stroke="#94A3B8" stroke-width="2" marker-end="url(#ah)"/>
+  <defs><marker id="ah" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" fill="#94A3B8"/></marker></defs>
+  <text x="142" y="130" text-anchor="middle" fill="#94A3B8" font-family="ui-sans-serif,system-ui" font-size="9">parse</text>
+  <!-- step 2: parser -->
+  <g>
+    <rect x="165" y="60" width="90" height="160" fill="#1E293B" stroke="#10B981" stroke-width="2" rx="4"/>
+    <text x="210" y="85" text-anchor="middle" fill="#10B981" font-family="ui-sans-serif,system-ui" font-size="11" font-weight="700">PARSER</text>
+    <g font-family="ui-monospace,monospace" font-size="9" fill="#A7F3D0">
+      <text x="175" y="115">BIND a</text>
+      <text x="175" y="130">BIND b</text>
+      <text x="175" y="145">LINK a b</text>
+      <text x="175" y="160">EFFECT a</text>
+      <text x="175" y="175">VIEW a</text>
+      <text x="175" y="190">TICK 1.0</text>
+      <text x="175" y="205">...</text>
+    </g>
+  </g>
+  <!-- arrow -->
+  <line x1="260" y1="140" x2="295" y2="140" stroke="#94A3B8" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="277" y="130" text-anchor="middle" fill="#94A3B8" font-family="ui-sans-serif,system-ui" font-size="9">build</text>
+  <!-- step 3: symbol table -->
+  <g>
+    <rect x="300" y="60" width="100" height="160" fill="#1E293B" stroke="#A855F7" stroke-width="2" rx="4"/>
+    <text x="350" y="85" text-anchor="middle" fill="#A855F7" font-family="ui-sans-serif,system-ui" font-size="11" font-weight="700">SYMBOLS</text>
+    <g font-family="ui-monospace,monospace" font-size="9" fill="#E9D5FF">
+      <text x="310" y="110">a → BIND</text>
+      <text x="310" y="125">b → BIND</text>
+      <text x="310" y="140">c → LINK</text>
+      <text x="310" y="155">d → EFFECT</text>
+      <text x="310" y="170">e → VIEW</text>
+      <text x="310" y="185">f → TICK</text>
+    </g>
+  </g>
+  <!-- arrow -->
+  <line x1="405" y1="140" x2="440" y2="140" stroke="#94A3B8" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="422" y="130" text-anchor="middle" fill="#94A3B8" font-family="ui-sans-serif,system-ui" font-size="9">check</text>
+  <!-- step 4: checker with status lights -->
+  <g>
+    <rect x="445" y="60" width="80" height="160" fill="#1E293B" stroke="#F59E0B" stroke-width="2" rx="4"/>
+    <text x="485" y="85" text-anchor="middle" fill="#F59E0B" font-family="ui-sans-serif,system-ui" font-size="11" font-weight="700">CHECKER</text>
+    <g>
+      <circle cx="460" cy="110" r="5" fill="#10B981"/>
+      <text x="475" y="113" fill="#A7F3D0" font-family="ui-sans-serif,system-ui" font-size="9">no dangle</text>
+      <circle cx="460" cy="135" r="5" fill="#10B981"/>
+      <text x="475" y="138" fill="#A7F3D0" font-family="ui-sans-serif,system-ui" font-size="9">no cycles</text>
+      <circle cx="460" cy="160" r="5" fill="#10B981"/>
+      <text x="475" y="163" fill="#A7F3D0" font-family="ui-sans-serif,system-ui" font-size="9">types ok</text>
+      <circle cx="460" cy="185" r="5" fill="#F59E0B"/>
+      <text x="475" y="188" fill="#FDE68A" font-family="ui-sans-serif,system-ui" font-size="9">2 unused</text>
+    </g>
+  </g>
+  <!-- arrow -->
+  <line x1="530" y1="140" x2="565" y2="140" stroke="#94A3B8" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="547" y="130" text-anchor="middle" fill="#94A3B8" font-family="ui-sans-serif,system-ui" font-size="9">emit</text>
+  <!-- step 5: combined module -->
+  <g>
+    <rect x="570" y="60" width="60" height="160" fill="#1E293B" stroke="#10B981" stroke-width="2" rx="4"/>
+    <text x="600" y="85" text-anchor="middle" fill="#10B981" font-family="ui-sans-serif,system-ui" font-size="11" font-weight="700">OUT</text>
+    <g font-family="ui-monospace,monospace" font-size="9" fill="#D1FAE5">
+      <text x="580" y="115">10 cells</text>
+      <text x="580" y="130">4 links</text>
+      <text x="580" y="145">2 fx</text>
+      <text x="580" y="160">3 view</text>
+      <text x="580" y="175">1 tick</text>
+    </g>
+  </g>
+  <text x="320" y="35" text-anchor="middle" fill="#E2E8F0" font-family="ui-sans-serif,system-ui" font-size="14" font-weight="600">The Linker Pipeline</text>
+  <text x="320" y="252" text-anchor="middle" fill="#94A3B8" font-family="ui-sans-serif,system-ui" font-size="11">.qm files → parser → symbol table → checker → combined module</text>
+</svg>
