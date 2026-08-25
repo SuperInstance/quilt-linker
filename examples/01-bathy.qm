@@ -1,0 +1,5 @@
+# The F/V EILEEN's morning ritual
+BIND bathy:0 4.2
+BIND tide:current 0
+LINK bathy:0 tide:current depends_on
+VIEW bathy:0 anyone

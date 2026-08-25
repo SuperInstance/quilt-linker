@@ -1,0 +1,5 @@
+# The bus: subscribers
+BIND tick 1.0
+BIND subscriber 0
+LINK subscriber tick observed
+VIEW tick anyone
