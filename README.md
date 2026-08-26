@@ -416,3 +416,27 @@ symbols are the rider. The rider is the librarian.
 
 MIT. The librarian is the rider's. The rider is the cowboy's.
 The cowboy's is the wind's.
+
+
+---
+
+## Roaming the Quilt collection
+
+You came through the **librarian**. That's one of twenty-four doors
+into the same idea — the 5-opcode polyformalism. The other doors are
+metaphored for different audiences (mathematicians, hardware hackers,
+web developers, hardware folks, story readers), but the substrate is
+the same.
+
+**The full map of the collection:** [COLLECTION.md](https://github.com/SuperInstance/AI-Writings/blob/master/seed-canon/COLLECTION.md)
+
+**From here, three wander-paths you might enjoy:**
+
+1. **[quilt-types](https://github.com/SuperInstance/quilt-types)** — the type system that this linker consumes
+2. **[quilt-vm-c](https://github.com/SuperInstance/quilt-vm-c)** — the C99 port of the same linker
+3. **[quilt-opt](https://github.com/SuperInstance/quilt-opt)** — the optimizer that runs after this linker
+
+The cowboy's maxim: *The unit of foundation is the cell, not the
+opcode. The 5 opcodes are the 5 messages a cell can receive. The 24
+repos are the 24 doors into the same message. The cowboy is the one
+who wanders.*
