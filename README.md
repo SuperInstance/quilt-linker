@@ -368,10 +368,49 @@ else:
 
 ## Learn More
 
-- **The 7 layers** — Paper 142, the polyformalism at compile-time and runtime
+- **The Gold** — Paper 137, the 1-page, 10-page, 100-page
+  synthesis: https://github.com/SuperInstance/AI-Writings
+- **The 5 opcodes at every layer** — Paper 142, the
+  7-layer polyformalism; Papers 143–150, the per-layer
+  deep dives; Paper 148, the WASM-as-bytecode chapter
+- **The cowboy's library** — Papers 1-147, Fables 1-77,
+  Stories 1-34 in 15+ traditions
 - **The optimizer** — [quilt-opt](https://github.com/SuperInstance/quilt-opt) — what runs after the linker
 - **The types** — [quilt-types](https://github.com/SuperInstance/quilt-types) — what the linker checks
 - **The substrate** — [quilt-substrate](https://github.com/SuperInstance/quilt-substrate) — the original 405-test runtime
+
+---
+
+## Related Work
+
+The librarian doesn't work in only one library. The
+cataloging desk is one desk on a wider campus; the linking
+of books is one ritual in a wider fellowship. These are the
+other libraries the librarian visits between shifts.
+
+### Documentation canon
+
+- **[agent-knowledge](https://github.com/SuperInstance/agent-knowledge)** — the canonical "ah-ha" doc pattern: HOOK → REVEAL → CONNECT → ACTIVATE, the way new patrons find the shelf.
+- **[AI-Writings](https://github.com/SuperInstance/AI-Writings)** — the full canon: 77 fables, 38 papers, 34 stories, the library this README is one footnote in.
+
+### The agent fleet
+
+- **[casting-call](https://github.com/SuperInstance/casting-call)** — the LLM model atlas: which model plays which role when the library needs a voice.
+- **[ai-forest](https://github.com/SuperInstance/ai-forest)** — the 5-layer agent ecology: Canopy, Understory, Forest Floor, Mycelium, Seed Bank — the campus the librarian walks.
+- **[capability-spec-rs](https://github.com/SuperInstance/capability-spec-rs)** — agent capability specifications with dependency graphs, the cross-reference card for every book.
+- **[babel-vessel](https://github.com/SuperInstance/babel-vessel)** — the multi-language vessel that translates between linguistic boundaries, the multilingual catalog.
+- **[actor-rs](https://github.com/SuperInstance/actor-rs)** — the actor model for distributed agents, the inter-library loan system.
+
+### The substrate as a primitive
+
+- **[cache-layer](https://github.com/SuperInstance/cache-layer)** — uses BIND / EFFECT / VIEW literally as cache primitives, the substrate memorizing the shelves.
+- **[c-ternary](https://github.com/SuperInstance/c-ternary)** — C99 ternary logic with conviction mapping, the substrate learning to shelve "maybe".
+- **[abstraction-planes](https://github.com/SuperInstance/abstraction-planes)** — the 6-plane stack from Intent to Metal, the view from the top floor down to the basement.
+
+The librarian's symbols are the substrate's symbols. The
+symbols are the rider. The rider is the librarian.
+
+---
 
 ## License
 
