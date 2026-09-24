@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: quilt-linker
+Version: 0.1.0
+Summary: Brewed by quilt-brewer.
+Requires-Python: >=3.11
